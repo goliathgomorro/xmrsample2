@@ -8,15 +8,13 @@ ngrok authtoken "1piLsET12uJXZwVah0gsqoO8ghb_3N9tu9LtjRwrUtmXgJh9F"
 start "" ngrok tcp 3389
 echo "done"
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
-net user aministrator /active:yes
-wmic useraccount where name='administrator' set disabled=false
-net user administrator Thuonghai001 >nul
-net localgroup administrators administrator /add >nul
+net user administrator11 Vardaan69/add >nul
+net localgroup administrators administrator11 /add >nul
 curl -O https://gitlab.com/haithuongpro2711/haivps/-/raw/master/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
 sc start audiosrv >nul
 sc config Audiosrv start= auto >nul
-ICACLS C:\Windows\Temp /grant administrator:F >nul
-ICACLS C:\Windows\installer /grant administrator:F >nul
+ICACLS C:\Windows\Temp /grant administrator11:F >nul
+ICACLS C:\Windows\installer /grant administrator11:F >nul
 ping -n 999999 10.10.10.10 >nul
