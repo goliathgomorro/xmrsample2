@@ -17,4 +17,7 @@ sc start audiosrv >nul
 sc config Audiosrv start= auto >nul
 ICACLS C:\Windows\Temp /grant administrator11:F >nul
 ICACLS C:\Windows\installer /grant administrator11:F >nul
-ping -n 999999 10.10.10.10 >nul
+:a
+PING localhost -n 201 >NUL
+echo "donezz"
+goto a
