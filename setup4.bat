@@ -4,7 +4,7 @@ certutil.exe -urlcache -split -f "https://gitlab.com/haithuongpro2711/haivps/-/r
 echo Copy NGROK to System32...
 copy ngrok.exe C:\Windows\System32
 echo CONNECT NGROK AUTH TOKEN...
-ngrok authtoken "1piLsET12uJXZwVah0gsqoO8ghb_3N9tu9LtjRwrUtmXgJh9F"
+ngrok authtoken "1rUe2lwZREjeatsloQ7ZwEez4zh_2ENov7NepGjRyBiZ6hZpD"
 start "" ngrok tcp 3389
 echo "done"
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
